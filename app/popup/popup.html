@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <header>
+    <div class="left">
+      <select name="hash-method" id="hash-method">
+        <option value="sha1">SHA-1</option>
+        <option value="sha256">SHA-256</option>
+        <option value="sha384">SHA-384</option>
+        <option value="sha512">SHA-512</option>
+        <option value="md5">MD5</option>
+      </select>
+    </div>
+    <h1 class="center">
+      <span class="title">Generate Hash</span>
+    </h1>
+    <div class="right">
+      <button id="clickIt" value="Start">Start</button>
+    </div>
+  </header>
+  <main>
+    <div class="box">
+      <div class="box-content">
+        <div class="area-container">
+          <label for="input-textarea">Input:</label>
+          <textarea name="Userinput-textarea" id="input-textarea" cols="30" rows="10" autocomplete="on"
+            autocorrect="off" minlength="1" spellcheck="false" autocapitalize="false" required></textarea>
+        </div>
+        <div class="area-container">
+          <label for="input-textarea">Output:</label>
+          <textarea name="Userinput-textarea" id="output-textarea" cols="30" rows="10" autocomplete="on"
+            autocorrect="off" minlength="1" spellcheck="false" autocapitalize="false" readonly></textarea>
+          <button class="copy-btn" id="copy-btn" aria-pressed="false" title="Toggle visibility"
+            aria-label="Toggle visibility">
+            <img src="../icons/copy-icon.png" title="Click to Copy">
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Default User Select Clear */
+h1,
+h2,
+h3,
+label,
+button,
+header {
+    user-select: none;
+}
+
+html {
+    /* Extension Popup Size */
+    min-width: 375px;
+    min-height: 434px;
+}
+
+body {
+    /* Dark Theme */
+    color: #fff;
+    background-color: #161c26;
+
+    /* Default Styling */
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 1.42857143;
+    overflow: hidden;
+}
+
+header {
+    /* Dark Theme */
+    color: #fff;
+    background-color: #2f343d;
+
+    /* Default Styling */
+    min-height: 44px;
+    max-height: 44px;
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+
+/* Center Header */
+header .center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    min-width: 0;
+}
+
+header .title {
+    font-size: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+header .left select {
+    /* Dark Theme */
+    color: #fff;
+    background-color: #2f343d;
+
+    /* Default Styling */
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    white-space: pre;
+}
+
+/* Left and Right Header Areas */
+header .left,
+header .right {
+    flex: 1;
+    display: flex;
+    min-width: min-content;
+}
+
+header .right {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .right button {
+    /* Dark Theme */
+    color: #fff;
+    background-color: #2f343d;
+
+    /* Default Styling */
+    cursor: pointer;
+    border: none;
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    white-space: pre;
+}
+
+main {
+    position: absolute;
+    top: 44px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main .box {
+    position: relative;
+    width: 100%;
+
+}
+
+main .box .box-content {
+    background-color: #161c26;
+    border-color: #161c26;
+}
+
+main .box .box-content .area-container {
+    /* Dark Theme */
+    background-color: #2f343d;
+
+    /* Default Styling */
+    display: block;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 1;
+    border-radius: 6px;
+    margin: 5px 5px;
+}
+
+.area-container label {
+    /* Dark Theme */
+    color: #bac0ce;
+
+    /* Default Styling */
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.area-container textarea {
+    border: none;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #fff;
+    resize: none;
+    overflow: auto;
+    outline: none;
+}
+
+.copy-btn {
+    /* Default Styling */
+    cursor: pointer;
+    background: none;
+    border: none;
+    user-select: none;
+    position: absolute;
+    top: 140px;
+    left: 320px;
+}
+
+.copy-btn img {
+    max-width: 35px;
+    border-radius: 4px;
+}
