@@ -1,0 +1,4 @@
+- [ ] Allow for the hashing of files on filesystem
+- [ ] Generate hashes of files after they are downloaded
+- [ ] Allow for hashing of images and files on websites
+

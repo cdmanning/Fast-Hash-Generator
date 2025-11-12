@@ -1,5 +1,3 @@
-console.log("popup.js is running!")
-
 //Button to generate hash
 document.addEventListener('DOMContentLoaded', function () {
     var checkPageButton = document.getElementById('clickIt');
@@ -65,7 +63,7 @@ async function hash(string, method) {
     }
     if (method === "md5") {
         /*
-        Thanks so much for this! 
+        Thanks so much for this! I couldn't figure out how to get a MD5 hashing algorithm working!
         https://stackoverflow.com/questions/1655769/fastest-md5-implementation-in-javascript
         */
         MD5 = function (e) {

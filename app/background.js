@@ -1,4 +1,3 @@
-console.log("background.js is running!")
 chrome.runtime.onInstalled.addListener(function () {
 
     chrome.contextMenus.create({
@@ -32,13 +31,13 @@ chrome.runtime.onInstalled.addListener(function () {
     });
 });
 
-//All options have same onclick event.
+//All options have the same on-click event.
 chrome.contextMenus.onClicked.addListener(genericOnClick);
 function genericOnClick(info) {
     hash(info.selectionText, info.menuItemId).then((hex) => send(hex))
 }
 
-//Sends msg to content script. 
+//Sends the message to the content script. 
 async function send(msg) {
     (async () => {
         const [tab] = await chrome.tabs.query({ active: true, lastFocusedWindow: true });
@@ -46,7 +45,7 @@ async function send(msg) {
     })();
 }
 
-//Function that generates hash values
+//Function that generates the hash values
 async function hash(string, method) {
     if (method === "sha1") {
         const utf8 = new TextEncoder().encode(string);
@@ -86,7 +85,7 @@ async function hash(string, method) {
     }
     if (method === "md5") {
         /*
-        Thanks so much for this! 
+        Thanks so much for this! I couldn't figure out how to get a MD5 hashing algorithm working!
         https://stackoverflow.com/questions/1655769/fastest-md5-implementation-in-javascript
         */
         MD5 = function (e) {
